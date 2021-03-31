@@ -1,0 +1,877 @@
+
+<style>
+  body{
+    margin:0px
+  }
+    
+    .iconContainer {
+    width: 100%;
+    position: absolute;
+    top: 75vh;
+    z-index: 10;
+    display: block;
+  }
+  
+
+  #icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .imgClass {
+    width: 12%;
+    margin: 5px;
+    max-width: 70px;
+    height: auto;
+  }
+
+  .dimensionClass {
+      position: absolute;
+    top: 20px;
+    right: 45px;
+   width: 5%;
+    height: auto;
+    z-index: 10;
+  }
+  
+
+  .feature {
+    display: none;
+  justify-content: center;
+    position: absolute;
+    left: 10%;
+    top: 40vh;
+  transform   : translate(0, -50%);
+    z-index: 10;
+}
+
+.socks {
+    display: none;
+  justify-content: center;
+    position: absolute;
+    left: 57%;
+    top: 21vh;
+  transform   : translate(0, -50%);
+ /* // transform: scaleX(-1); */
+    z-index: 10;
+    width : 6%;
+}
+
+.circle1 {
+    display: none;
+  justify-content: center;
+    position: absolute;
+    left: 58%;
+    top: 39vh;
+  transform   : translate(0, -50%);
+ 
+    z-index: 10;
+    width : 5.5%;
+}
+.circle2 {
+    display: none;
+  justify-content: center;
+    position: absolute;
+    left: 58.3%;
+    top: 39vh;
+  transform   : translate(0, -50%);
+ 
+    z-index: 10;
+    width : 5%;
+}
+.circle3 {
+    display: none;
+  justify-content: center;
+    position: absolute;
+    left: 58.3%;
+    top: 39vh;
+  transform   : translate(0, -50%);
+  
+    z-index: 10;
+    width : 4.8%;
+}
+.plusSign {
+    display: none;
+  justify-content: center;
+    position: absolute;
+    left: 59.3%;
+    top: 39vh;
+  transform   : translate(0, -50%);
+ 
+    z-index: 10;
+    width : 2.3%;
+}
+.tapToPlace {
+    display: none;
+  justify-content: center;
+    position: absolute;
+    left: 64%;
+    top: 39vh;
+  transform   : translate(0, -50%);
+ 
+    z-index: 10;
+    width : 9%;
+}
+
+
+  .feature img {
+    width: 80%;
+  }
+  .imgClass img {
+    /* z-index: 3; */
+    width: 100%;
+  }
+
+  .dimensionImages {
+    display: none;
+  justify-content: center;
+    position: absolute;
+    left: 40%;
+    top: 62vh;
+  transform   : translate(0, -50%);
+    z-index: 10;
+    width : 13%;
+}
+.dimensionImages1 {
+    display: none;
+  justify-content: center;
+    position: absolute;
+    left: 35%;
+    top: 40vh;
+  transform   : translate(0, -50%);
+    z-index: 10;
+    width : 4%;
+    height: 40%;
+}
+.dimensionImages2 {
+    display: none;
+  justify-content: center;
+    position: absolute;
+    left: 53%;
+    top: 56vh;
+  transform   : translate(0, -50%);
+    z-index: 10;
+    width : 8%;
+}
+
+.Note10-animation {
+  width: 350px;
+ 
+    display: none;
+    position: absolute;
+    top: 40vh;
+    left: 80%;
+    transform   : translate(-50%, -50%);
+    z-index: 10;
+
+}
+.dot-animation {
+  width: 100px;
+ 
+    display: none;
+    position: absolute;
+    top: 30vh;
+    left: 65%;
+    transform   : translate(-50%, -50%);
+    z-index: 10;
+
+}
+.milkplus {
+  width: 150px;
+ 
+    display: none;
+    position: absolute;
+    top: 20vh;
+    left: 70%;
+    transform   : translate(-50%, -50%);
+    z-index: 10;
+
+}
+.phoneanim {
+  animation-name: animphone;
+  animation-duration: 2s;
+}
+
+@keyframes animphone {
+  /* from {left: 100%;}
+  to {left: 80%;} */
+  from {
+    /* left: 80%; */
+    transform: scale(0.5);
+      
+  }
+  to {
+    /* left: 80%; */
+    transform: scale(1.0);
+      
+  }
+}
+.eccobear-animation
+{
+   width: 250px;
+ 
+    display: none;
+    position: absolute;
+    top: 40vh;
+    left: 70%;
+    transform   : translate(-50%, -50%);
+    z-index: 10;
+}
+
+.HygieneSystem-animation {
+  width: 250px;
+ 
+    display: none;
+    position: absolute;
+    top: 40vh;
+    left: 70%;
+    transform   : translate(-50%, -50%);
+    z-index: 10;
+
+}
+
+.digitalMotor-animation {
+  width: 250px;
+ 
+    display: none;
+    position: absolute;
+    top: 40vh;
+    left: 70%;
+    transform   : translate(-50%, -50%);
+    z-index: 10;
+
+}
+
+/*.quickWash-animation {
+  width: 250px;
+ 
+    display: none;
+    position: absolute;
+    top: 40vh;
+    left: 70%;
+    transform   : translate(-50%, -50%);
+    z-index: 10;
+
+}*/
+
+.ceramicHeater-animation {
+  width: 250px;
+ 
+    display: none;
+    position: absolute;
+    top: 40vh;
+    left: 70%;
+    transform   : translate(-50%, -50%);
+    z-index: 10;
+
+}
+
+  .sketchfab-embed-wrapper iframe {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+
+
+  @media only screen and (max-width: 1023px) {
+
+    .subiconContainer {
+    width: 100%;
+    position: absolute;
+    top: 65vh;
+    z-index: 10;
+    display: none;
+}
+    .imgClass {
+    width: 18%;
+    margin: 1px;
+    max-width: 140px;
+    height: auto;
+}
+
+
+
+.subimgClass {
+    width: 18%;
+    margin: 10px;
+    max-width: 76px;
+    height: auto;
+}
+
+    .sketchfab-embed-wrapper #viewar {
+      margin: 0px;
+      padding: 0px;
+      top: 70vh;
+      pointer-events: none;
+      right: 0%;
+      position: absolute;
+      z-index: 3;
+      margin-right: -10px;
+      width: 124px;
+      height: 88px;
+
+    }
+
+    .sketchfab-embed-wrapper #vieward {
+      margin: 0px;
+      padding: 0px;
+      top: 80vh;
+      right: -100%;
+      position: absolute;
+      z-index: 3;
+      margin-right: -10px;
+      width: 124px;
+      height: 88px;
+      display: none;
+    }
+
+  }
+</style>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158173022-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-158173022-6');
+</script>
+<script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.7.1.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<div class="sketchfab-embed-wrapper">
+  <iframe id="api-frame" title="A 3D model" src="" frameborder="0" allow="autoplay;autostart; fullscreen;vr"
+    mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="0" allow="autoplay; fullscreen; vr"
+    mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+   
+
+
+
+  <div class="iconContainer" id="iconContainer">
+    <div id="icons">
+      <div class="imgClass">
+        <img id="EcoBubble"
+          src="https://webardata.s3.ap-south-1.amazonaws.com/samsung/add+wash/SelectedIcons/EcoBubble.png" iconicBtn_status="show"/>
+      </div>
+
+      <div class="imgClass">
+        <img id="Hygiene-steam"
+          src="https://webardata.s3.ap-south-1.amazonaws.com/samsung/add+wash/SelectedIcons/Hygiene-steam.png" colorVolBtn_status="show"/>
+      </div> 
+
+      
+      
+   
+  </div>
+
+
+</div>
+
+
+<!-- Features -->
+  <div class="feature" id="EcobubbleFeature">
+    <img src="https://webardata.s3.ap-south-1.amazonaws.com/samsung/add+wash/CallOuts_Landscape/EcoBubble.png"/>
+  </div>
+   <div class="feature" id="HygieneFeature">
+    <img src="https://webardata.s3.ap-south-1.amazonaws.com/samsung/add+wash/CallOuts_Landscape/Hygience-steam.png"/>
+  </div>
+   
+   <!-- <div class="feature" id="QuickwashFeature">
+    <img src="https://samsung-test1.s3.ap-south-1.amazonaws.com/Addwash/AddWash_ART/CallOuts_Landscape/15-MIN.png"/>
+  </div> -->
+   <!-- <div class="feature" id="SmartcheckFeature">
+    <img src="https://samsung-test1.s3.ap-south-1.amazonaws.com/Addwash/AddWash_ART/CallOuts_Landscape/Smart-check.png"/>
+  </div> -->
+  <div class="feature" id="DimensionsFeature">
+      <img src="https://samsung-test1.s3.ap-south-1.amazonaws.com/Addwash/AddWash_ART/capacity vertical.png"/>
+    </div>
+<div class="feature" id="DimensionsFeature">
+      <img src="https://samsung-test1.s3.ap-south-1.amazonaws.com/Addwash/AddWash_ART/capacity vertical.png"/>
+    </div>
+<div class="feature" id="DimensionsFeature">
+      <img src="https://samsung-test1.s3.ap-south-1.amazonaws.com/Addwash/AddWash_ART/capacity vertical.png"/>
+    </div>
+
+
+ <img class="Note10-animation" id = "note10Anim"
+   src="https://samsung-test1.s3.ap-south-1.amazonaws.com/Addwash/AddWash_ART/Anim_SmartWash/Smart_wash_00.png" 
+   alt="Note 10 animation"/>
+<img class="dot-animation" id = "dotanim"
+   src="https://webardata.s3.ap-south-1.amazonaws.com/samsung/spacemax/DotAnim/dot_00000.png" 
+   alt="dot animation"/>
+
+<img class="milkplus" id = "milk"
+   src="https://webardata.s3.ap-south-1.amazonaws.com/samsung/spacemax/Milk-bottle-with-plus.png" 
+   alt="milk"/>
+
+   <img class="eccobear-animation" id = "eccobearAnim"
+   src="http://ec2-15-206-69-15.ap-south-1.compute.amazonaws.com/namrathasoni/samsung/callouts/FridgeAnim/samsung_view_inside_fridge_animation_without%20border_101.jpg" 
+   alt="eco bear animation"/>
+
+   <img class="HygieneSystem-animation" id = "hygienesystemAnim"
+   src="http://ec2-15-206-69-15.ap-south-1.compute.amazonaws.com/namrathasoni/samsung/callouts/FridegeAnims/samsung_fridge_screen_ui_101.jpg" 
+   alt="hygiene system animation"/>
+
+    <img class="digitalMotor-animation" id = "digitalMotorAnim"
+   />
+
+<!-- 
+    <img class="quickWash-animation" id = "quickWashAnim"
+   src="https://samsung-test1.s3.ap-south-1.amazonaws.com/Addwash/AddWash_ART/Anim_Timer/Timer_00-min.png" 
+   alt="quick wash  animation"/> -->
+
+    <img class="ceramicHeater-animation" id = "ceramicHeaterAnim"
+   />
+
+
+    
+    <img class="dimensionClass" id="dimensionBtn" src="https://samsung-test1.s3.ap-south-1.amazonaws.com/Addwash/AddWash_ART/Dimension-icon1.png"
+    alt="dimension  animation" />
+
+     <img class="dimensionImages" id="dimensionimage" src="https://samsung-test1.s3.ap-south-1.amazonaws.com/Addwash/AddWash_ART/Dimensions/Width.png"
+    alt="dimension width" />
+     <img class="dimensionImages1" id="dimensionimage1" src="https://samsung-test1.s3.ap-south-1.amazonaws.com/Addwash/AddWash_ART/Dimensions/Height.png"
+    alt="dimension  height" />
+     <img class="dimensionImages2" id="dimensionimage2" src="https://samsung-test1.s3.ap-south-1.amazonaws.com/Addwash/AddWash_ART/Dimensions/Depth.png"
+    alt="dimension  depth" />
+
+     <img class="socks" id="socks"  />
+
+     <img class="circle1" id="circle1"  />
+
+     <img class="circle2" id="circle2" />
+
+     <img class="circle3" id="circle3" />
+
+     <img class="plusSign" id="plus"  />
+
+     <img class="tapToPlace" id="tapToPlace" />
+  
+ 
+
+<script type="text/javascript">
+  var iframe = document.getElementById('api-frame');
+  var uid = 'ee9ace94bc8945e68dfdef78a2fd6cb9';
+
+  var isAnimFinish = true;
+  var nextAnim = -1;
+
+  var isDoorOpen = false;
+  var areBottleShown = false;
+  var noteVisible = true;
+  var clickRotateFlag = false;
+  var playPauseFlag = false;
+  var oneLoopCompleted = false;
+  var clickRotateEnable = false;
+  var autoRotateFlag = false;
+  var textureStatus = false;
+
+
+  var isPlusBtnClicked = false;
+
+  //var areboxOut = false;
+  // var aredrawerOut = false;
+  //var aregateOut = false;
+
+  var camStartPosition = [-3913.29, 1500.0, 1052.5];
+  var camStartTarget = [-19.7, -1.97, 173.0];
+
+  var EcoBubbleIcons = ["http://ec2-15-206-69-15.ap-south-1.compute.amazonaws.com/namrathasoni/samsung/Food-management.png", "http://ec2-15-206-69-15.ap-south-1.compute.amazonaws.com/namrathasoni/samsung/Food-management%201.png"];
+  var HygieneIcons = ["http://ec2-15-206-69-15.ap-south-1.compute.amazonaws.com/namrathasoni/samsung/Family-Connection.png", "http://ec2-15-206-69-15.ap-south-1.compute.amazonaws.com/namrathasoni/samsung/Family-connection%201.png"];
+  var AddWashIcons = ["http://ec2-15-206-69-15.ap-south-1.compute.amazonaws.com/namrathasoni/samsung/Home-control.png", "http://ec2-15-206-69-15.ap-south-1.compute.amazonaws.com/namrathasoni/samsung/Home-control%201.png"];
+  var pickersIcons = ["http://ec2-15-206-69-15.ap-south-1.compute.amazonaws.com/namrathasoni/samsung/Space%20max%20ICON-07.png", "http://ec2-15-206-69-15.ap-south-1.compute.amazonaws.com/namrathasoni/samsung/SpaceMax-Technology.png"];
+  var inverterIcons = ["http://ec2-15-206-69-15.ap-south-1.compute.amazonaws.com/namrathasoni/samsung/Space%20max%20ICON-09.png", "http://ec2-15-206-69-15.ap-south-1.compute.amazonaws.com/namrathasoni/samsung/Space%20max%20ICON-10.png"];
+  // var quickwashIcons = ["https://samsung-test1.s3.ap-south-1.amazonaws.com/Addwash/AddWash_ART/SelectedIcons/15-min-Quickwash.png", "https://samsung-test1.s3.ap-south-1.amazonaws.com/Addwash/AddWash_ART/UnSelectedIcons/15-min.png"];
+  var smartWashIcons = ["https://samsung-test1.s3.ap-south-1.amazonaws.com/Addwash/AddWash_ART/SelectedIcons/Smart-check.png", "https://samsung-test1.s3.ap-south-1.amazonaws.com/Addwash/AddWash_ART/UnSelectedIcons/smart-check.png"];
+ 
+
+ 
+ 
+  // By default, the latest version of the viewer API will be used.
+  var client = new Sketchfab(iframe);
+  // Alternatively, you can request a specific version.
+  // var client = new Sketchfab( '1.7.1', iframe );
+  var gApi;
+  client.init(uid, {
+    preload: 0,
+    ui_infos: 0,
+    ui_fullscreen: 0,
+    ui_help: 0,
+    ui_inspector: 0,
+    ui_stop: 0,
+    ui_watermark: 0,
+    ui_settings: 0,
+    ui_watermark_link: 0,
+    autostart: 0,
+    ui_vr: 0,
+    ui_hint: 0,
+    ui_animations: 0,
+    annotations_visible: 1,
+    annotation_tooltip_visible: 1,
+    success: function onSuccess(api) {
+      gApi = api;
+      api.start();
+      // hideScale();
+      api.addEventListener('viewerready', function () {
+          api.pause(function(err) {
+              if (!err) {
+                  window.console.log('Animation paused');
+                  api.seekTo(0.0, function(err) {
+                      if (!err) {
+                          window.console.log('Animation seeking');
+                      }
+                  });
+              }
+          });
+
+          var opclicked = 0
+
+          //option 1
+        document.getElementById('EcoBubble').addEventListener('click', function () 
+        {  
+          opclicked = 1;
+          disableAllTheAnimationBeforePlayingNext();
+          // animTexture1(0);
+
+          document.getElementById('note10Anim').style.display = 'block'
+            document.getElementById('note10Anim').classList.add('phoneanim');
+            document.getElementById('note10Anim').src = "https://webardata.s3.ap-south-1.amazonaws.com/samsung/add+wash/Anim_EccoBear/Samsung_EcoBear_film_00.png"
+            setTimeout(function()
+            {
+              animTexture11(0);
+            },2000);
+            setTimeout(function()
+            {
+                animTexture23(0);
+            },2000);
+            document.getElementById('EcobubbleFeature').style.display = 'block'
+          console.log("op 1");
+          
+        });
+
+        //option 2
+        document.getElementById('Hygiene-steam').addEventListener('click', function () 
+        {  
+          opclicked = 2;
+          disableAllTheAnimationBeforePlayingNext();
+          document.getElementById('dotanim').style.display = 'none'
+          animTexture21(0);
+          document.getElementById('note10Anim').style.display = 'block'
+            document.getElementById('note10Anim').classList.add('phoneanim');
+            document.getElementById('note10Anim').src = "https://webardata.s3.ap-south-1.amazonaws.com/samsung/add+wash/Anim_WashingMachine/JPEG+sequence_00.png"
+            setTimeout(function()
+            {
+              animTexture22(0);
+            },2000);
+            setTimeout(function()
+            {
+                animTexture23(0);
+            },2000);
+            document.getElementById('HygieneFeature').style.display = 'block'
+          console.log("op 2");
+        });
+
+        function animTexture11(step){     // EccoBear Sequence
+          if(opclicked != 1){
+            return
+          }
+          if(step>22){      // 00 - 22 image sequence
+            return
+          }
+          let str = step.toString().padStart(2, "0")
+          document.getElementById('note10Anim').src = "https://webardata.s3.ap-south-1.amazonaws.com/samsung/add+wash/Anim_EccoBear/Samsung_EcoBear_film_"+str+".png"
+          setTimeout(function()
+          {
+              animTexture11(step+1);
+          },200);
+        }
+
+        function animTexture21(step){
+          if(opclicked != 2){
+            return
+          }
+          if(step>60){
+            
+            return
+          }
+          let stpev = step % 15;
+          let str = stpev.toString().padStart(5, "0")
+          document.getElementById('dotanim').src = "https://webardata.s3.ap-south-1.amazonaws.com/samsung/spacemax/DotAnim/dot_"+str+".png"
+          setTimeout(function()
+          {
+            if(opclicked == 2){
+              animTexture21(step+1);
+            }
+              
+          },200);
+        }
+        function animTexture22(step){     // Hygiene-Steam Sequence
+          if(opclicked != 2){
+            return
+          }
+          if(step>15){      // 00 - 15 image sequence
+            
+
+            return
+          }
+          let str = step.toString().padStart(2, "0")
+          document.getElementById('note10Anim').src = "https://webardata.s3.ap-south-1.amazonaws.com/samsung/add+wash/Anim_WashingMachine/JPEG+sequence_"+str+".png"
+          setTimeout(function()
+          {
+              animTexture22(step+1);
+          },200);
+        }
+        function animTexture23(step){     // AddWash Door Glass Sequence
+          // if(opclicked != 1 && opclicked != 2){
+          //   return
+          // }
+          if(step>35){      // 00 - 35 image sequence
+            
+            return
+          }
+          let str = step.toString().padStart(2, "0")
+          changeTextureT("Interior_mat","https://webardata.s3.ap-south-1.amazonaws.com/samsung/add+wash/Anim_Samsung_M_Wash/Samsung_w-m_wash+animation_"+str+".png");
+          setTimeout(function()
+          {
+              animTexture23(step+2);
+          },200);
+        }
+
+
+        function disableAllTheAnimationBeforePlayingNext()
+        {
+          document.getElementById('eccobearAnim').style.display = 'none'
+          document.getElementById('EcobubbleFeature').style.display = 'none'
+          document.getElementById('hygienesystemAnim').style.display = 'none'
+          document.getElementById('digitalMotorAnim').style.display = 'none'
+          document.getElementById('HygieneFeature').style.display = 'none'
+          // document.getElementById('quickWashAnim').style.display = 'none'
+          document.getElementById('note10Anim').style.display = 'none'
+          document.getElementById('dotanim').style.display = 'none'
+          document.getElementById('milk').style.display = 'none'
+          document.getElementById('ceramicHeaterAnim').style.display = 'none'
+          document.getElementById('DimensionsFeature').style.display = 'none'
+
+        }
+        function animTexture1(step){
+          if(opclicked != 1){
+            return
+          }
+          if(step>21){
+            document.getElementById('EcobubbleFeature').style.display = 'block'
+            document.getElementById('note10Anim').style.display = 'block'
+            document.getElementById('note10Anim').classList.add('phoneanim');
+            setTimeout(function()
+            {
+              if(opclicked == 1){
+                document.getElementById('dotanim').style.display = 'block'
+                animTexture2(0);
+              }
+            },2000);
+            
+            return
+          }
+          let str = step.toString().padStart(2, "0")
+          changeTextureT("Main_Door_Glass1","https://webardata.s3.ap-south-1.amazonaws.com/samsung/spacemax/FridgeAnim/samsung_view_inside_fridge_animation_without+border_"+str+".jpg");
+          setTimeout(function()
+          {
+              animTexture1(step+1);
+          },200);
+        }
+        function animTexture2(step){
+          if(opclicked != 1){
+            return
+          }
+          if(step>15){
+            document.getElementById('dotanim').style.display = 'none'
+            animTexture3(0);
+            return
+          }
+          let str = step.toString().padStart(5, "0")
+          document.getElementById('dotanim').src = "https://webardata.s3.ap-south-1.amazonaws.com/samsung/spacemax/DotAnim/dot_"+str+".png"
+          setTimeout(function()
+          {
+              animTexture2(step+1);
+          },200);
+        }
+        function animTexture3(step){
+          if(opclicked != 1){
+            return
+          }
+          if(step>9){
+            document.getElementById('note10Anim').style.display = 'none'
+            changeTextureT("Main_Door_Glass1","https://webardata.s3.ap-south-1.amazonaws.com/samsung/spacemax/Screen-without-milk2.png");
+            setTimeout(function()
+          {
+            document.getElementById('milk').style.display = 'block'
+            setTimeout(function()
+            {
+              document.getElementById('milk').style.display = 'none'
+              changeTextureT("Main_Door_Glass1","https://webardata.s3.ap-south-1.amazonaws.com/samsung/spacemax/Screen-with-milk.png");
+            },1000);
+          },2000);
+
+            return
+          }
+          let str = step.toString().padStart(2, "0")
+          document.getElementById('note10Anim').src = "https://webardata.s3.ap-south-1.amazonaws.com/samsung/spacemax/Phone_ani/Phone_UI__"+str+"-min.png"
+          setTimeout(function()
+          {
+              animTexture3(step+1);
+          },200);
+        }
+        function changeTextureT(materialName, path) {
+          console.log("In CTT");
+          api.getMaterialList(function (err, materials) {
+            for (var i = 0; i < materials.length; i++) {
+            //console.log(i+"   "+materials[i].name +"  "+textureName[0])
+              if (materials[i].name == materialName) {
+                var materialToUpdate = materials[i];
+                console.log(materialToUpdate);
+                api.getTextureList(function (err, textures) {
+                   if(!err) {
+                      console.log(textures);
+                      var i;
+                      var tex = materialToUpdate.channels.AlbedoPBR.texture;
+
+                      api.updateTexture(path, tex.uid, function(
+                        err,
+                        textureUid
+                        ) {
+                        if(!err) {
+                          console.log('Replaced texture with UID', textureUid);
+                          }
+                        });
+                        console.log(materialToUpdate);
+                        //Apply the change
+                        api.setMaterial(materialToUpdate, function() {
+                          console.log('Material updated');
+                      });
+                    }
+                });
+              }
+            }
+            api.setMaterial(materialToUpdate, function () 
+            {
+              console.log('Material updated');
+            });
+          });
+        }
+        
+        document.getElementById('dimensionBtn').addEventListener('click', function () 
+        {
+          MoveCameraForDimensions();
+          disableAllTheAnimationBeforePlayingNext();  
+          document.getElementById('DimensionsFeature').style.display = 'block'
+          document.getElementById('dimensionimage').style.display = 'block'
+          document.getElementById('dimensionimage1').style.display = 'block'
+          document.getElementById('dimensionimage2').style.display = 'block'
+        });
+        function Camera_Middle() {
+          console.log("***************Camera_Still****************")
+          if (window.innerWidth >= 1000) {
+             setCamera([-1.6881356678963075, -922.2419779243639, 145.9316152649208], [2.548366150048872, -3.8604957307132355, 52.25526018559804]);
+            setFieldOfView(48);
+          } else if (window.innerWidth < window.innerHeight) {
+           setCamera([-28.452136617523074, -193.93448309919765, 70.66460414561469], [0.1442432258563341, 18.55744046408727, 17.690735586900573]);
+            setFieldOfView(31);
+          } else {
+            setCamera([-70.27689687866565, -812.601093047205, 51.56296858033787], [-0.6425232557785363, 84.86217657157823, 51.56296858033775]);
+          }
+        }
+
+        function moveCameraBackAfterDimension(delay = 0)
+        {
+           setTimeout(function()
+           {
+              Camera_Middle();
+              document.getElementById('DimensionsFeature').style.display = 'none'
+            document.getElementById('dimensionimage').style.display = 'none'
+            document.getElementById('dimensionimage1').style.display = 'none'
+             document.getElementById('dimensionimage2').style.display = 'none'
+           },3000 + delay);
+        }
+        function setCameraforMobile(pos_offset, target_offset) {
+          console.log('Screen width' + window.innerWidth);
+          if (window.innerWidth < 1000) {
+            api.setCameraLookAt(
+              [camStartPosition[0] + pos_offset[0], camStartPosition[1] + pos_offset[1], camStartPosition[2] + pos_offset[2]], // eye position
+              [camStartTarget[0] + target_offset[0], camStartTarget[1] + target_offset[1], camStartTarget[2] + target_offset[2]], // target to lookat
+              0.5 // duration of the animation in seconds
+            );
+          }
+        }
+
+        function resetCameraforMobile() {
+          if (window.innerWidth < 1000) {
+            api.setCameraLookAt(
+              [camStartPosition[0], camStartPosition[1], camStartPosition[2]], // eye position
+              [camStartTarget[0], camStartTarget[1], camStartTarget[2]], // target to lookat
+              0.5 // duration of the animation in seconds
+            );
+          }
+        }
+        function setFieldOfView(fov) {
+          api.setFov(fov, function (err, angle) {
+            if (!err) {
+              console.log('FOV set to', angle);
+            }
+          });
+        }
+
+        function Camera_Still() {
+          console.log("mack>>>>>>>>>>>>>>>>>>>>>>>>")
+          console.log("***************Camera_Still****************")
+          if (window.innerWidth >= 1000) {
+             setCamera([-1.6881356678963075, -922.2419779243639, 45.9316152649208], [2.548366150048872, -3.8604957307132355, 52.25526018559804]);
+            setFieldOfView(45);
+          } else if (window.innerWidth < window.innerHeight) {
+            setCamera([-28.452136617523074, -193.93448309919765, 70.66460414561469], [0.1442432258563341, 18.55744046408727, 17.690735586900573]);
+            setFieldOfView(43);
+          } else {
+            setCamera([-501.82525963526325, -549.814673347904, 101.2856195659065], [-24.19161463481247, 70.44772746810091, 51.57256510957675]);
+          }
+        }
+
+        function setCamera(position, target) {
+          //if(window.innerWidth < 1000){
+          api.setCameraLookAt(
+            [position[0], position[1], position[2]], // eye position
+            [target[0], target[1], target[2]], // target to lookat
+            0.5 // duration of the animation in seconds
+          );
+        }
+        function MoveCameraForDimensions() {
+          console.log("***************Camera_dimensions****************")
+          if (window.innerWidth >= 1000) {
+           setCamera([308.574206754628, -359.9294991068109, 50.58693725964851], [0.8969359609080659, -7.001375848393914, 21.388106756985305]);
+            setFieldOfView(25);
+          } else if (window.innerWidth < window.innerHeight) {
+           setCamera([-28.452136617523074, -193.93448309919765, 70.66460414561469], [0.1442432258563341, 18.55744046408727, 17.690735586900573]);
+            setFieldOfView(31);
+          } else {
+            setCamera([-70.27689687866565, -812.601093047205, 51.56296858033787], [-0.6425232557785363, 84.86217657157823, 51.56296858033775]);
+          }
+
+          moveCameraBackAfterDimension(50);
+        }
+
+
+
+
+      });
+    },
+    error: function onError() {
+      console.log('Viewer error');
+    }
+  });
+
+</script>
